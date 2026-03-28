@@ -66,6 +66,8 @@ This strategy is commonly used in:
 
 - ALB distributes traffic based on **weights**
 - Each target group points to a different environment
+  <img width="1172" height="686" alt="image" src="https://github.com/user-attachments/assets/c518ce04-86d7-4325-8ade-f667d26ebec1" />
+
 
 ---
 
