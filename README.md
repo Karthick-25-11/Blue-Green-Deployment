@@ -1,6 +1,6 @@
-# ☕ Blue-Green Deployment using AWS (Cafe Website)
+# ☕ Blue-Green Deployment using AWS (Cafe Website)🟦🟢
 
-## 📌 Introduction
+##  Introduction
 
 I built this project to understand how **zero-downtime deployments** work in real-world systems.
 
@@ -26,11 +26,11 @@ Instead of updating the existing application directly, we:
 2. Test it safely
 3. Switch traffic from Blue → Green
 
-👉 This ensures **no downtime** and allows quick rollback.
+This ensures **no downtime** and allows quick rollback.
 
 ---
 
-## ❓ Why is it used?
+##  Why is it used?
 
 From what I understood while doing this project:
 
@@ -41,7 +41,7 @@ From what I understood while doing this project:
 
 ---
 
-## 🌍 Where is it used?
+## Where is it used?
 
 This strategy is commonly used in:
 
@@ -52,7 +52,7 @@ This strategy is commonly used in:
 
 ---
 
-## 🛠️ Tools & Services Used
+## Tools & Services Used
 
 - AWS EC2  
 - AWS Application Load Balancer (ALB)  
@@ -72,7 +72,7 @@ This strategy is commonly used in:
 
 ---
 
-## 🚀 How I Implemented This
+## How I Implemented This
 
 ### 1️⃣ Created Blue Environment
 - Launched EC2 (Ubuntu)
@@ -111,43 +111,37 @@ By refreshing the browser, I could see:
 
 ---
 
-### 5️⃣ Visual Enhancement
-
-To make it clear for beginners, I added a small badge on the UI:
-
-
-This made the load balancing behavior very obvious.
 
 ---
 
-## 💥 Errors I Faced
+##  Errors I Faced
 
 This project taught me a lot through mistakes:
 
-- ❌ Used wrong package (`httpd` vs `apache2`)
-- ❌ Permission denied while writing HTML
-- ❌ User data script issues (EOF mistake)
-- ❌ Empty page due to wrong echo syntax
-- ❌ Apache stopped → site not loading
+- Used wrong package (`httpd` vs `apache2`)
+- Permission denied while writing HTML
+- User data script issues (EOF mistake)
+- Empty page due to wrong echo syntax
+- Apache stopped → site not loading
 
-👉 Debugging these issues helped me understand AWS better.
+ Debugging these issues helped me understand AWS better.
 
 ---
 
-## 🔄 Failure Simulation & Rollback
+##  Failure Simulation & Rollback
 
 I also tested a failure scenario:
 
 - Stopped web server in Green  
 - ALB marked it **unhealthy**  
-- Users started getting errors  
+- Users started getting errors 
 
 Then I:
 
 - Switched traffic back to Blue  
 - Restored the application instantly  
 
-👉 This showed how powerful rollback is in real systems.
+ This showed how powerful rollback is in real systems.
 
 ---
 
@@ -161,7 +155,7 @@ Then I:
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 
 This project helped me move from **theory to practical understanding**.
 
